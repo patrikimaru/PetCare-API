@@ -183,40 +183,47 @@ SECRET_LOGIN_KEY=YOUR_SECRET_KEY
 
 
 ##Admin JSON
+```json
 {
-	  "_id": "658e6592537e2dbed0626151",
-		"username": "admin",
-		"email": "admin123@gmail.com",
-		"phoneNumber": "09123456789",
-		"password": "$2b$10$jhxMz.gXkzHarCS0T1r5wOb.PX7a745F4VACJhyBTT1LpdOZgKliW",
-		"role": "admin",
+  "_id": "658e6592537e2dbed0626151",
+  "username": "admin",
+  "email": "admin123@gmail.com",
+  "phoneNumber": "09123456789",
+  "password": "$2b$10$jhxMz.gXkzHarCS0T1r5wOb.PX7a745F4VACJhyBTT1LpdOZgKliW",
+  "role": "admin",
 },
+```
 
 ##User JSON
+```json
 {
-		"_id": "658e6a43a7462db6a67e47a6",
-		"username": "user",
-		"email": "user@gmail.com",
-		"phoneNumber": "09123456789",
-		"password": "$2b$10$REx9RO/FNVEUGjB67Gnnr.sg0Ue4Zys7GOjDFMvK3iK17JvHQP2W.",
-		"role": "user",
+  "_id": "658e6a43a7462db6a67e47a6",
+  "username": "user",
+  "email": "user@gmail.com",
+  "phoneNumber": "09123456789",
+  "password": "$2b$10$REx9RO/FNVEUGjB67Gnnr.sg0Ue4Zys7GOjDFMvK3iK17JvHQP2W.",
+  "role": "user",
 },
+```
 
 ##Appointments JSON
+```json
+
 {
-		"_id": "658e6a6fa7462db6a67e47aa",
-		"dogCategory": "small",
-		"service": "basic",
-		"schedule": "2023-12-29T06:42:00.000Z",
-		"price": 500,
-		"status": "done",
-		"user": {
-			"_id": "658e6a43a7462db6a67e47a6",
-			"username": "user",
-			"email": "user@gmail.com",
-			"phoneNumber": "09123456789",
-			"password": "$2b$10$REx9RO/FNVEUGjB67Gnnr.sg0Ue4Zys7GOjDFMvK3iK17JvHQP2W.",
-			"role": "user",
-		},
+  "_id": "658e6a6fa7462db6a67e47aa",
+  "dogCategory": "small",
+  "service": "basic",
+  "schedule": "2023-12-29T06:42:00.000Z",
+  "price": 500,
+  "status": "done",
+  "user": {
+    "_id": "658e6a43a7462db6a67e47a6",
+    "username": "user",
+    "email": "user@gmail.com",
+    "phoneNumber": "09123456789",
+    "password": "$2b$10$REx9RO/FNVEUGjB67Gnnr.sg0Ue4Zys7GOjDFMvK3iK17JvHQP2W.",
+    "role": "user",
+  },
 },
+```
 
