@@ -13,7 +13,7 @@ An API for managing dog grooming appointments, including user registration, logi
 Follow these steps to set up and run the Dog Grooming Appointment System on your local machine.
 
 1. Open your terminal in VS Code
-2. git clone https://github.com/patrikimaru/PetCare-API.git 
+2. git clone [https://github.com/patrikimaru/PetCare-API.git ](https://github.com/patrikimaru/PetCare-API.git)
 3. Create a .env file and fill it with the following information:
 ```js
 PORT=YOUR_PORT_NUMBER
