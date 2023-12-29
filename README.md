@@ -7,7 +7,6 @@ An API for managing dog grooming appointments, including user registration, logi
 - [Getting Started](#getting-started)
 - [Routes](#routes)
 - [Models](#models)
-- [License](#license)
 
 ## Getting Started
 
