@@ -182,7 +182,7 @@ SECRET_LOGIN_KEY=YOUR_SECRET_KEY
    - **Description:** Delete all appointments.
 
 
-##Admin JSON
+## Admin JSON
 ```json
 {
   "_id": "658e6592537e2dbed0626151",
@@ -194,7 +194,7 @@ SECRET_LOGIN_KEY=YOUR_SECRET_KEY
 },
 ```
 
-##User JSON
+## User JSON
 ```json
 {
   "_id": "658e6a43a7462db6a67e47a6",
@@ -206,7 +206,7 @@ SECRET_LOGIN_KEY=YOUR_SECRET_KEY
 },
 ```
 
-##Appointments JSON
+## Appointments JSON
 ```json
 
 {
