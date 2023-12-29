@@ -6,16 +6,16 @@ const {
   getUserById,
   updateUserById,
   registerUser,
+  registerAdmin,
   loginUser,
   deleteAllUsers,
 } = require('../controllers/userController');
 
 const router = express.Router();
 
-
 router.post('/register', registerUser);
+router.post('/admin/register', registerAdmin);
 router.post('/login', loginUser);
-
 
 router.get('/', authenticateToken, getAllUsers);
 router.get('/:id', authenticateToken, getUserById);

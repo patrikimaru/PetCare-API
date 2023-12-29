@@ -21,6 +21,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please enter a value for password.'],
   },
+  role: {
+    type: String,
+    enum: ['user', 'admin'],
+    default: 'user',
+    trim: true,
+  },
 });
 
 const User = mongoose.model('User', userSchema);

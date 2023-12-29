@@ -39,6 +39,15 @@ const userController = {
     res.json({ message: 'User registered successfully.', user: newUser });
   },
 
+  registerAdmin: async (req, res) => {
+    const { username, email, phoneNumber, password } = req.body;
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const newUser = new User({ username, email, phoneNumber, password: hashedPassword, role: "admin" });
+    await newUser.save();
+    res.json({ message: 'Admin registered successfully.', user: newUser });
+  },
+
   loginUser: async (req, res) => {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
@@ -48,7 +57,7 @@ const userController = {
     }
 
     const token = jwt.sign({ id: user._id, email: user.email }, process.env.SECRET_LOGIN_KEY, { expiresIn: '7d' });
-    res.json({ message: 'Login successful.', token: token, userId: user._id });
+    res.json({ message: 'Login successful.', token, userId: user._id, role: user.role });
   },
 
   deleteAllUsers: async (req, res) => {
