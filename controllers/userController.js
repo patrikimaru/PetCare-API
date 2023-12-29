@@ -48,7 +48,7 @@ const userController = {
     }
 
     const token = jwt.sign({ id: user._id, email: user.email }, process.env.SECRET_LOGIN_KEY, { expiresIn: '7d' });
-    res.json({ message: 'Login successful.', token });
+    res.json({ message: 'Login successful.', token: token, userId: user._id });
   },
 
   deleteAllUsers: async (req, res) => {
